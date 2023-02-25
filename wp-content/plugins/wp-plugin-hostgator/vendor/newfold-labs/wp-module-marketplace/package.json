@@ -1,0 +1,10 @@
+{
+  "name": "@newfold-labs/wp-module-marketplace",
+  "description": "A module for rendering product data and interacting with the Hiive marketplace API.",
+  "license": "GPL-2.0-or-later",
+  "private": true,
+  "author": {
+    "name": "Micah Wood",
+    "email": "micah@wpscholar.com"
+  }
+}

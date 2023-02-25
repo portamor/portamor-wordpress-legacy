@@ -1,0 +1,54 @@
+{
+  "name": "newfold-labs/wp-module-data",
+  "description": "Newfold Data Module",
+  "type": "library",
+  "license": "GPL-2.0-or-later",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://newfold-labs.github.io/satis/",
+      "only": [
+        "newfold-labs/*"
+      ]
+    },
+    {
+      "type": "composer",
+      "url": "https://bluehost.github.io/satis/",
+      "only": [
+        "bluehost/*",
+        "mojoness/*"
+      ]
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "NewfoldLabs\\WP\\Module\\Data\\": "src/"
+    },
+    "files": [
+      "bootstrap.php"
+    ]
+  },
+  "require-dev": {
+    "bluehost/wp-php-standards": "^1.1"
+  },
+  "scripts": {
+    "fix": [
+      "vendor/bin/phpcbf . --standard=Bluehost"
+    ],
+    "lint": [
+      "vendor/bin/phpcs . --standard=Bluehost -s"
+    ]
+  },
+  "scripts-descriptions": {
+    "fix": "Automatically fix coding standards issues where possible.",
+    "lint": "Check files against coding standards."
+  },
+  "require": {
+    "wpscholar/url": "^1.2"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
+}

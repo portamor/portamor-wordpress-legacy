@@ -1,0 +1,43 @@
+{
+	"name": "newfold-labs/wp-module-secure-passwords",
+	"description": "Prevents passwords exposed in data breaches from being used and encourages better password hygiene.",
+	"type": "library",
+	"license": "GPL-2.0-or-later",
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://newfold-labs.github.io/satis/",
+			"only": [
+				"newfold-labs/*"
+			]
+		}
+	],
+	"authors": [
+		{
+			"name": "Jonathan Desrosiers",
+			"email": "jonathan.desrosiers@newfold.com"
+		}
+	],
+	"autoload": {
+		"files": [
+			"bootstrap.php"
+		]
+	},
+	"require-dev": {
+		"bluehost/wp-php-standards": "^1.1",
+		"wp-phpunit/wp-phpunit": "^5.9",
+		"yoast/phpunit-polyfills": "^1.0"
+	},
+	"scripts": {
+		"fix": [
+			"vendor/bin/phpcbf . --standard=Bluehost"
+		],
+		"lint": [
+			"vendor/bin/phpcs . --standard=Bluehost -s"
+		]
+	},
+	"scripts-descriptions": {
+		"fix": "Automatically fix coding standards issues where possible.",
+		"lint": "Check files against coding standards."
+	}
+}

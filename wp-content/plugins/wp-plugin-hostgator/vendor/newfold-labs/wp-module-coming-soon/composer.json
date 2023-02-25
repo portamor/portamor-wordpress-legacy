@@ -1,0 +1,54 @@
+{
+  "name": "newfold-labs/wp-module-coming-soon",
+  "description": "Coming Soon module for WordPress sites.",
+  "license": "GPL-2.0-or-later",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://newfold-labs.github.io/satis/",
+      "only": [
+        "newfold-labs/*"
+      ]
+    },
+    {
+      "type": "composer",
+      "url": "https://bluehost.github.io/satis/",
+      "only": [
+        "bluehost/*",
+        "endurance/*",
+        "mojoness/*",
+        "newfold/*"
+      ]
+    }
+  ],
+  "authors": [
+    {
+      "name": "Evan Mullins",
+      "email": "evan@bluehost.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "NewfoldLabs\\WP\\Module\\ComingSoon\\": "includes"
+    },
+    "files": [
+      "bootstrap.php",
+      "includes/coming-soon.php"
+    ]
+  },
+  "require-dev": {
+    "bluehost/wp-php-standards": "^1.1"
+  },
+  "scripts": {
+    "fix": [
+      "vendor/bin/phpcbf . --standard=Bluehost"
+    ],
+    "lint": [
+      "vendor/bin/phpcs . --standard=Bluehost -s"
+    ]
+  },
+  "scripts-descriptions": {
+    "fix": "Automatically fix coding standards issues where possible.",
+    "lint": "Check files against coding standards."
+  }
+}

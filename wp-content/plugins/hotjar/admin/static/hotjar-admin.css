@@ -1,0 +1,20 @@
+#business-info-wrap {
+    margin: 2rem;
+}
+
+#hotjar-form-area {
+    padding: 0.5rem 1rem;
+    margin-top: 1.5rem;
+}
+
+.hotjar-logo {
+    display: block;
+    width: 80px;
+    margin-bottom: 1rem;
+}
+
+.hotjar-tagline {
+    display: block;
+    width: 350px;
+    margin-left: -9px;
+}

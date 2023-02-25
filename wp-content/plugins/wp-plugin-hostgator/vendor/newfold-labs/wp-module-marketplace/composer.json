@@ -1,0 +1,52 @@
+{
+  "name": "newfold-labs/wp-module-marketplace",
+  "description": "A module for rendering product data and interacting with the Hiive marketplace API.",
+  "type": "library",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Micah Wood",
+      "email": "micah@wpscholar.com"
+    },
+    {
+      "name": "Evan Mullins",
+      "email": "evanrm@gmail.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://newfold-labs.github.io/satis/",
+      "only": [
+        "newfold-labs/*"
+      ]
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "NewfoldLabs\\WP\\Module\\Marketplace\\": "includes"
+    },
+    "files": [
+      "bootstrap.php"
+    ]
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "require": {
+    "newfold-labs/wp-module-data": "^2.0.0"
+  },
+  "require-dev": {
+    "newfold-labs/wp-php-standards": "^1.2"
+  },
+  "scripts": {
+    "fix": [
+      "vendor/bin/phpcbf --standard=phpcs.xml ."
+    ],
+    "lint": [
+      "vendor/bin/phpcs --standard=phpcs.xml -s ."
+    ]
+  }
+}
