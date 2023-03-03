@@ -1099,6 +1099,12 @@ final class OCEANWP_Theme_Class {
 
 }
 
+//Ocultar admin bar a todos los usuarios
+add_action('after_setup_theme', 'bld_ocultar_admin_bar');
+function bld_ocultar_admin_bar() {
+add_filter( 'show_admin_bar', '__return_false' );
+}
+
 /**--------------------------------------------------------------------------------
 #region Freemius - This logic will only be executed when Ocean Extra is active and has the Freemius SDK
 ---------------------------------------------------------------------------------*/
