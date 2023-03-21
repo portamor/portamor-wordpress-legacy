@@ -5,7 +5,7 @@ Tags: Chat, Click to Chat, Facebook Messenger, WhatsApp, Telegram, Whatsapp Busi
 Requires at least: 4.4.0
 Tested up to: 6.1
 Requires PHP: 5.5
-Stable tag: 4.5.17
+Stable tag: 4.5.19
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -134,6 +134,11 @@ You choose a color and we customize the entire visual theme of the widget. With 
 
 #### ⚡ Fast & Light.
 Only load what need when needed. Joinchat is lightweight and follow best coding practices. [See tests report](https://wphive.com/plugins/creame-whatsapp-me/)
+
+#### 🔕 No distractions.
+Joinchat integrates with all major Visual Editors and Page Builders and will not appear when editing a page.
+
+Supported editors: **Beaver Builder**, **Brizy Page Builder**, **Elementor**, **Oxygen Builder**, **Page Builder by SiteOrigin**, **Visual Composer** and **WP Page Builder**.
 
 #### 👨‍💻 Developer friendly.
 Fully extensible, with lots of filters and actions to extend its functionality or change behavior.
@@ -355,6 +360,13 @@ Joinchat save two localStorage variables for proper operation:
 
 
 == Changelog ==
+
+= 4.5.19 =
+* **NEW:** Not display on editing with major visual editors and page builders. Added new editors in addition to Elementor.
+
+= 4.5.18 =
+* FIX Removed WooCommerce product metabox introduced in v4.5.17.
+* FIX Correct currency symbol for products on WhastApp message.
 
 = 4.5.17 =
 * FIX Remove "Close" aria-label attribute.

@@ -1,4 +1,4 @@
-/*! elementor - v3.11.2 - 22-02-2023 */
+/*! elementor - v3.11.5 - 14-03-2023 */
 .elementor-control-unit-1 {
   width: 27px;
 }
@@ -2600,6 +2600,7 @@ a.elementor-responsive-switcher:hover {
   height: 100%;
   background-size: cover;
   background-position: center;
+  padding-bottom: 42.8571%;
 }
 .elementor-control-media-area {
   background-image: linear-gradient(45deg, #ddd 25%, transparent 0, transparent 75%, #ddd 0, #ddd), linear-gradient(45deg, #ddd 25%, transparent 0, transparent 75%, #ddd 0, #ddd);
