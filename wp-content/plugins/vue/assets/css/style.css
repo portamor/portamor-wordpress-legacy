@@ -1,0 +1,86 @@
+.specialist-header-img img {
+  width: 100%;
+}
+.btns-container {
+  background-image: url("https://portamor.files.wordpress.com/2021/06/bwa5yio-imgur.jpg");
+  background-color: #d86e77;
+  height: 775px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+.header-items {
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 200px;
+}
+.btns-group {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+.btn-actions {
+  background-color: #23883d;
+  border: none;
+  height: 48px;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  display: inline-block;
+  max-width: 350px;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.specialist-img img {
+  height: 300px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.specialist-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.item-full {
+  width: 100%;
+}
+
+.specialist-stars {
+  color: #FACC15;
+  font-size: 35px;
+  margin-bottom: 0.5rem;
+}
+
+.specialist-name {
+
+}
+.specialist-profession {
+  font-size: 20px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.btn-ask {
+  height: 32px;
+  width: 82px;
+}
