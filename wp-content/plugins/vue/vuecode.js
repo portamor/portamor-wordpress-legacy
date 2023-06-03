@@ -93,8 +93,10 @@
     },
     methods: {
       filterby(id) {
-        console.log(id);
         this.specialists = specialistlist.filter((specialist) => specialist.category == id);
+      },
+      contactSpecialist(number) {
+        window.open(`https://api.whatsapp.com/send?phone=${number}`, `_blank`);
       }
     }
   }).mount('#app')

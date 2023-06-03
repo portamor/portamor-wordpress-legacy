@@ -7,10 +7,10 @@
 // AUthor URI: https://joseluisb.com
 
 
-function estilos_plugin(){
+function estilos_plugin() {
 
   $estilos_url = plugin_dir_url(__FILE__);
-  wp_enqueue_style('modo_oscuro', $estilos_url.'/assets/css/style.css', '', '1.1', 'all');
+  wp_enqueue_style('modo_oscuro', $estilos_url.'/assets/css/style.css', '', '1.2', 'all');
 
   wp_register_script('wpvue_vuejs', 'https://unpkg.com/vue@3/dist/vue.global.js');
   wp_register_script('my_vuecode', plugin_dir_url( __FILE__ ).'vuecode.js', 'wpvue_vuejs', true );
@@ -42,7 +42,7 @@ function func_wp_vue(){
     <div class='header-items'>
       <h2 style='font-size: 2rem; color: white;'>Servicios especializados</h2>
       <h2 style='font-size: 3rem; color: white;'>Profesionales especialistas en el adulto mayor</h2>
-      <h3 style='font-size: 2rem; color: white;'>Te atenderemos con toda la experiencia, amor en lo que necesites para seguir fortaleciendo tu bienestar mental, participación social, alimentación saludable y ejercicio físico por un envejecimiento activo.</h3>
+      <h3 style='font-size: 2rem; color: white;'>Te aenderemos con toda la experiencia, amor en lo que necesites para seguir fortaleciendo tu bienestar mental, participación social, alimentación saludable y ejercicio físico por un envejecimiento activo.</h3>
     </div>
     <div class='btns-group'>
       <button class='btn-actions' @click='filterby(1)'>Bienestar mental 🧘</button>
@@ -63,7 +63,7 @@ function func_wp_vue(){
           ★★★★★
         </div>
         <div class='item-full'>
-          <button class='btn-ask'>Consultar</button>
+          <button class='btn-ask' @click='contactSpecialist(specialist.number)'>Consultar</button>
         </div>  
       </div>
       </div>
