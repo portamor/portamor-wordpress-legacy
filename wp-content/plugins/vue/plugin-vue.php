@@ -42,7 +42,7 @@ function func_wp_vue(){
     <div class='header-items'>
       <h2 style='font-size: 2rem; color: white;'>Servicios especializados</h2>
       <h2 style='font-size: 3rem; color: white;'>Profesionales especialistas en el adulto mayor</h2>
-      <h3 style='font-size: 2rem; color: white;'>Te aenderemos con toda la experiencia, amor en lo que necesites para seguir fortaleciendo tu bienestar mental, participación social, alimentación saludable y ejercicio físico por un envejecimiento activo.</h3>
+      <h3 style='font-size: 2rem; color: white;'>Te atenderemos con toda la experiencia, amor en lo que necesites para seguir fortaleciendo tu bienestar mental, participación social, alimentación saludable y ejercicio físico por un envejecimiento activo.</h3>
     </div>
     <div class='btns-group'>
       <button class='btn-actions' @click='filterby(1)'>Bienestar mental 🧘</button>
@@ -65,6 +65,10 @@ function func_wp_vue(){
         <div class='item-full'>
           <button class='btn-ask' @click='contactSpecialist(specialist.number)'>Consultar</button>
         </div>  
+        <div>
+          <h6>Descripción</h6>
+          <p>{{ limitStringLength(specialist.description, 359) }}</p>  
+        </div>
       </div>
       </div>
     </div>
