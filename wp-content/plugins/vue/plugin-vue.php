@@ -54,7 +54,7 @@ function func_wp_vue(){
   <div class='card-container' >
     <div class='card' v-for='specialist in specialists' :key='specialist'>
       <div class='specialist-img'>
-        <img :src='specialist.img' alt='avatar del profesional'>
+        <img :src='specialist.img' alt='avatar del profesional' style='height: 311px;'>
       </div>
       <div class='specialist-info'>
         <h2 class='item-full specialist-name'>{{ specialist.name }}</h2>
