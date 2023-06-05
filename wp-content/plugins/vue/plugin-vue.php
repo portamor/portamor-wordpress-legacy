@@ -10,7 +10,7 @@
 function estilos_plugin() {
 
   $estilos_url = plugin_dir_url(__FILE__);
-  wp_enqueue_style('modo_oscuro', $estilos_url.'/assets/css/style.css', '', '1.2', 'all');
+  wp_enqueue_style('modo_oscuro', $estilos_url.'/assets/css/style.css', '', '1.0', 'all');
 
   wp_register_script('wpvue_vuejs', 'https://unpkg.com/vue@3/dist/vue.global.js');
   wp_register_script('my_vuecode', plugin_dir_url( __FILE__ ).'vuecode.js', 'wpvue_vuejs', true );
